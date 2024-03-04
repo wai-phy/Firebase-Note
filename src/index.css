@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card{
+  background-color: darkorchid;
+  text-align: center;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin: 10px 20px;
+}
+
+.card-ctr{
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+input{
+  width: 70%;
+  padding: 10px 2px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.submit-btn{
+  background-color: #fff;
+  color: blueviolet;
+  padding: 10px 6px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav{
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav button{
+  cursor: pointer;
+  background-color:blueviolet ;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 10px;
+}
+
+.logo{
+  color: blueviolet;
+  font-style: italic;
+  font-size: 30px;
+}
