@@ -6,6 +6,10 @@ const AddNote = ({ getNotes }) => {
   //add new note
   const addNote = async (e) => {
     e.preventDefault();
+    if (note.trim().length === 0) {
+      alert("Please Enter A Valid Note.");
+      return;
+    }
     try {
       await fetch(
         "https://firenote-wpa-default-rtdb.firebaseio.com/notes.json",
