@@ -17,6 +17,7 @@ code {
   text-align: center;
   padding: 20px 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-radius: 12px;
   margin: 10px 20px;
@@ -57,8 +58,7 @@ input{
   justify-content: space-between;
 }
 
-.nav button{
-  cursor: pointer;
+.nav p{
   background-color:blueviolet ;
   color: #fff;
   border-radius: 12px;
@@ -69,4 +69,37 @@ input{
   color: blueviolet;
   font-style: italic;
   font-size: 30px;
+}
+
+.loading-msg{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(43, 226, 83);
+}
+
+.error-msg{
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: red;
+}
+
+svg{
+  cursor: pointer;
+}
+
+.intro{
+  text-align: center;
+  margin: 30px 0px;
+}
+.intro h3{
+  color: violet;
+}
+
+.intro p{
+  color: purple;
 }

@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 
-const AddNote = () => {
+const AddNote = ({ getNotes }) => {
   //define state
   const [note, setNote] = useState("");
   //add new note
   const addNote = async (e) => {
     e.preventDefault();
-    try{
-        await fetch("https://firenote-wpa-default-rtdb.firebaseio.com/notes.json", {
-      method: "POST",
-      body: JSON.stringify(note),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    setNote("")
-    }catch(error){
-        alert("Something went wrong! Try again later!")
+    try {
+      await fetch(
+        "https://firenote-wpa-default-rtdb.firebaseio.com/notes.json",
+        {
+          method: "POST",
+          body: JSON.stringify(note),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setNote("");
+      getNotes();
+    } catch (error) {
+      alert("Something went wrong! Try again later!");
     }
   };
   return (

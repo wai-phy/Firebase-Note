@@ -1,10 +1,10 @@
 import React from "react";
 
-const Navbar = ({getNotes}) => {
+const Navbar = ({totalNotes}) => {
   return (
     <section className="nav">
       <h1 className="logo">FireNote</h1>
-      <button onClick={getNotes}>Show Notes</button>
+      <p>Total Notes - <span>{totalNotes}</span></p>
     </section>
   );
 };
